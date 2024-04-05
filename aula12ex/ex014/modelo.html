@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício</title>
+    <title>Super contador</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body onload="carregar()">
+<body>
     <header >
-        <h1>Hora do Dia</h1>
+        <h1>Vamos contar</h1>
     </header>
     <section>
-        <div id = "msg">
-           aqui vai aparecer a mensagem
-        </div>
-        <div id = "image">
-            <img id="imagem" src="manhap.png" alt="foto da manha">
-
-        </div>
+     <div id="dados">
+        <P>Inicio: <input type="number" name="Inicio" id="txti"></P>
+        <P>Fim <input type="number" name="Fim" id="txtf"></P>
+        <P>Passos <input type="number" name="Passos" id="txtp"></P>
+        <p><input type="button" value="Contar" onclick="contar()"></p>
+     </div>
+     <div id="res">
+        Praparando a contagem...
+     </div>
     </section>
     <footer>
         <p>&copy;Cursoemvideo</p>
